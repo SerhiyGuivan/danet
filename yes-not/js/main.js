@@ -51,12 +51,37 @@
                 verticalGutter: 0
             });
         }
+        if( $('.bk-ref').length){
+            $('.bk-ref').jScrollPane({
+                horizontalGutter: 0,
+                verticalGutter: 0
+            });
+        }
+        if( $('.bk-activity').length){
+            $('.bk-activity').jScrollPane({
+                horizontalGutter: 0,
+                verticalGutter: 0
+            });
+        }
+        if( $('.bk-reverse-money').length){
+            $('.bk-reverse-money').jScrollPane({
+                horizontalGutter: 0,
+                verticalGutter: 0
+            });
+        }
         //selectmenu
     	if( $('.form-select').length ){
     		$('.form-select').selectmenu({
     			width: '252px'
     		});
     	}
+        //radios
+        if( $('.form-select-rate-wrap').length){
+            $('.form-radios-select-rate').buttonset();
+            $('.form-radio[name=select-rate]').on('change', function(){
+               $('.user-choice').text('Вы выбрали ставку ' + $(this).val()); 
+            })
+        }
 
     });
     $(window).load(function(){
