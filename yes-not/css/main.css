@@ -173,7 +173,7 @@ textarea {
     height: 660px;
 }
 .bk-reverse-money {
-    height: 320px;
+    height: 300px;
     overflow: auto;
     margin-bottom: 30px;
 }
@@ -240,6 +240,7 @@ textarea {
     color:#fff;
     font-size: 18px;
     font-weight: 700;
+    text-align: center;
 }
 .bk-reverse-money .table-reverse-data tbody td{
     color: #595959;
@@ -250,8 +251,78 @@ textarea {
     background-color: transparent;
     padding: 30px 10px;
 }
-
-
+.bk-auto-replenishment,
+.bk-hand-replenishment {
+    margin-bottom: 30px;
+    height: 300px;
+    overflow: auto;
+}
+.bk-auto-replenishment .bk_title,
+.bk-hand-replenishment .bk_title {
+    color:#e9b651;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 24px;
+}
+.bk-auto-replenishment .form-auto-replenishment-wrap,
+.bk-hand-replenishment .form-hand-replenishment-wrap {
+    padding: 0 24px;
+    margin-bottom: 30px;
+}
+.bk-auto-replenishment .form-text-wrap,
+.bk-hand-replenishment .form-text-wrap {
+    max-width: none;
+    width: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}   
+.bk-auto-replenishment .form-text-wrap .form-text,
+.bk-hand-replenishment .form-text-wrap .form-text {
+    width: 90px;
+}
+.bk-auto-replenishment .form-text-wrap label,
+.bk-auto-replenishment .form-text-wrap .suffix,
+.bk-hand-replenishment .form-text-wrap label,
+.bk-hand-replenishment .form-text-wrap .suffix {
+    font-size: 14px;
+}
+.bk-auto-replenishment .form-submit-wrap,
+.bk-hand-replenishment .form-submit-wrap {
+    text-align: center;
+}
+.bk-auto-replenishment .table-auto-replenishment-data,
+.bk-hand-replenishment .table-hand-replenishment-data {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px 4px;    
+}
+.bk-auto-replenishment .table-auto-replenishment-data td,
+.bk-hand-replenishment .table-hand-replenishment-data td {
+    padding: 4px 10px;
+    background-color: #161b20;
+    text-transform:  uppercase;
+}
+.bk-auto-replenishment .table-auto-replenishment-data thead td,
+.bk-hand-replenishment .table-hand-replenishment-data thead td {
+    color:#fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+.bk-auto-replenishment .table-auto-replenishment-data tbody td,
+.bk-hand-replenishment .table-hand-replenishment-data tbody td{
+    color: #595959;
+    font-size: 16px;
+}
+.bk-auto-replenishment .table-auto-replenishment-data td.empty,
+.bk-hand-replenishment .table-hand-replenishment-data td.empty {
+    text-align: center;
+    background-color: transparent;
+    padding: 30px 10px;
+}
 .bk-social {
    background: url(../img/bg-social-wrap.png) no-repeat scroll center bottom transparent;
    position: absolute;

@@ -69,6 +69,18 @@
                 verticalGutter: 0
             });
         }
+        if( $('.bk-hand-replenishment').length){
+            $('.bk-hand-replenishment').jScrollPane({
+                horizontalGutter: 0,
+                verticalGutter: 0
+            });
+        }
+        if( $('.bk-auto-replenishment').length){
+            $('.bk-auto-replenishment').jScrollPane({
+                horizontalGutter: 0,
+                verticalGutter: 0
+            });
+        }
         //selectmenu
     	if( $('.form-select').length ){
     		$('.form-select').selectmenu({
