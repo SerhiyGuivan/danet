@@ -1393,6 +1393,100 @@ textarea {
     font-size: 24px;
     padding: 6px 10px;
 }
+.bk-switch-payment {
+    margin: 0 0 30px;
+    height: 300px;
+    overflow: auto;
+}
+.bk-switch-payment .switch-payment-items {
+    display: table;
+    width: 100%;
+}
+.bk-switch-payment .switch-payment-items .item {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+
+}
+.bk-switch-payment .switch-payment-items .img-wrap {
+    height: 150px;
+    margin-bottom: 30px;
+}
+.bk-switch-payment .switch-payment-items .img-wrap:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+}
+.bk-switch-payment .switch-payment-items .img-link {
+    display: inline-block;
+    vertical-align: middle;
+}
+.bk-switch-payment .switch-payment-items .title {
+    font-size: 18px;
+    font-weight: 700;
+    color:#e9b651;
+    text-transform: uppercase;
+}
+.bk-current-payment {
+    height: 360px;
+    overflow: auto;
+    margin-bottom: 30px;
+}
+.bk-current-payment .img-wrap {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.bk-current-payment .faq-items .item{
+    margin-bottom: 20px;
+}
+.bk-current-payment .faq-items .title {
+    font-size: 16px;
+    font-weight: 700;
+    color:#efbb53;
+    margin-bottom: 4px;
+}
+.bk-current-payment .faq-items .content {
+    font-size: 16px;
+    color:#fff;
+}
+.bk-current-payment .info {
+    text-align: center;
+    font-size: 16px;
+    color:#efbb53;
+    margin-bottom: 10px;
+}
+.bk-current-payment .link-wrap {
+    text-align: center;
+}
+.bk-current-payment .link {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/bg-submit.png) repeat-x scroll #ff6100;
+    border-radius: 3px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #ffcd6c;
+    -webkit-box-shadow: inset 0 -1px 0 #ff9432;
+    box-shadow: inset 0 -1px 0 #ff9432;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 10px;
+    outline: none;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.bk-current-payment .link:hover {
+    background-position: 0 bottom;
+}
+
+
+
+
 
 .ui-widget.ui-selectmenu-button {
     border-radius: 4px;
