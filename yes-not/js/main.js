@@ -8,6 +8,46 @@
 	    	});
 		}
     };
+    function notEnoughMoney(){
+        if( $('.bk-not-enough-money').length ){
+            $.colorbox({
+                html: $('.bk-not-enough-money'),
+                width: '480px',
+                closeButton: false,
+            });   
+        }
+    }
+    function noAccess(){
+        if( $('.bk-no-access').length ){
+            $.colorbox({
+                html: $('.bk-no-access'),
+                width: '480px',
+                closeButton: false,
+            });   
+        }
+    }
+    function youLose(){
+        if( $('.bk-you-lose').length ){
+            $.colorbox({
+                html: $('.bk-you-lose'),
+                width: '480px',
+                closeButton: false,
+                className: 'no-bg'
+            });   
+        }
+    }
+    function youWin(){
+        if( $('.bk-you-win').length ){
+            $.colorbox({
+                html: $('.bk-you-win'),
+                width: '602px',
+                closeButton: false,
+                className: 'no-bg'
+            });   
+        }
+    }
+    
+     
     $(document).ready(function(){
 
         //colorbox
@@ -144,10 +184,36 @@
                 '<span class="countdown-col"><span class="countdown-row"><span>{s10}</span><span>{s1}</span></span><span class="countdown-text">{sl}</span></span>'
             }); 
         }
+        if($('#game-countdown').length){
+            $('#game-countdown').countdown({
+                until: 60, 
+                format: 'S',
+                layout: '{s10}{s1}'                
+            }); 
+        }
+        
 
 
     });
     $(window).load(function(){
         signUpComplete();
+        
+        notEnoughMoney();
+        setTimeout(function(){
+            noAccess();
+        }, 3000);
+        setTimeout(function(){
+            signUpComplete();
+        }, 6000);
+        setTimeout(function(){
+           youLose();
+        }, 9000);
+        setTimeout(function(){
+            youWin();
+        }, 12000);
+        
+        
+        
+        
 	});
 })(jQuery);

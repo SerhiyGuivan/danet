@@ -26,6 +26,7 @@
     /*#cboxTopCenter{height:21px; background:url(../img/border.png) 0 0 repeat-x;}*/
     /*#cboxBottomCenter{height:21px; background:url(../img/border.png) 0 -29px repeat-x;}*/
     #cboxContent{background:#212121; overflow:hidden;}
+    .no-bg #cboxContent {background:transparent;}
         .cboxIframe{background:#212121;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         /*#cboxLoadedContent{margin-bottom:28px;}*/
