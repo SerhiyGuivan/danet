@@ -142,13 +142,13 @@
             });
         }
         if( $('.bk-current-payment').length){
-            $('.bk-switch-payment').jScrollPane({
+            $('.bk-current-payment').jScrollPane({
                 horizontalGutter: 0,
                 verticalGutter: 0
             });
         }
         if( $('.bk-requisites-info').length){
-            $('.bk-switch-payment').jScrollPane({
+            $('.bk-requisites-info').jScrollPane({
                 horizontalGutter: 0,
                 verticalGutter: 0
             });
@@ -169,7 +169,8 @@
         if( $('.form-select-rate-wrap').length){
             $('.form-radios-select-rate').buttonset();
             $('.form-radio[name=select-rate]').on('change', function(){
-               $('.user-choice').text('Вы выбрали ставку ' + $(this).val()); 
+                $('.user-choice, .form-submit-wrap').fadeIn();
+                $('.user-choice').text('Вы выбрали ставку ' + $(this).val()); 
             })
         }
         //countdown 

@@ -349,6 +349,7 @@ textarea {
     font-size: 21px;
     color:#fefefe;
     padding: 6px 10px;
+    text-transform: uppercase;
 }
 .bk-social .bk_content {
     display: inline-block;
@@ -778,6 +779,10 @@ textarea {
     color:#fff;
     text-transform: uppercase;
 }
+.bk-menu-profile .item:first-child {
+    width: 35px;
+}
+
 .bk-menu-profile .item a {
     color: inherit;
     text-decoration: none;
@@ -789,6 +794,10 @@ textarea {
 .bk-menu-profile .item a:hover {
     color: #ffd25a;
 }
+.bk-menu-profile .item a.active {
+    background-color: #212121;
+}
+
 .bk-menu-profile  .item .link-profile {
     display: block;
     padding: 12px 10px;
@@ -1254,10 +1263,12 @@ textarea {
     color:#ff0000;
     font-weight: 700;
     text-align: center;
+    display: none;
 }
 .bk-select-rate .form-submit-wrap {
     text-align: center;
     margin-bottom: 30px;
+    display: none;
 }
 
 .bk-greeting .table-username {
@@ -1494,7 +1505,6 @@ textarea {
     font-size: 16px;
     font-weight: 700;
     color:#efbb53;
-    margin-bottom: 4px;
 }
 .bk-current-payment .faq-items .content {
     font-size: 16px;
@@ -1698,6 +1708,7 @@ textarea {
     vertical-align: top;
     width: 50px;
     line-height: 50px;
+    height: 50px;
     background: #161b20;
     text-align: center;
     font-size: 26px;
@@ -1706,13 +1717,15 @@ textarea {
     cursor: pointer;
 }
 .bk-question-num .bk_content .question.current {
-    background-color: #ffd25a;
+    background: url(../img/bg-current.png) no-repeat scroll 0 0 transparent;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
     color:#161b1f;
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    -moz-transform: scale(1.28);
+    -webkit-transform: scale(1.28);
+    -o-transform: scale(1.28);
+    -ms-transform: scale(1.28);
+    transform: scale(1.28);
 }
 .bk-question-num .bk_content .question.pass {
     color:#818181;
@@ -1782,8 +1795,8 @@ textarea {
     border-style: solid;
     border-color: #fff;
     padding: 3px 10px;
-    -webkit-box-shadow: inset 0 -1px 0  #fff;
-    box-shadow: inset 0 -1px 0  #fff;
+    -webkit-box-shadow: inset 0 -1px 0  #fff, 0 0 60px 15px rgba(0,0,0, 0.35),0 0 60px 15px rgba(0,0,0, 0.35);
+    box-shadow: inset 0 -1px 0  #fff, 0 0 60px 15px rgba(0,0,0, 0.35),0 0 60px 15px rgba(0,0,0, 0.35);
     outline: none;
     cursor: pointer;
     width: 100%;
@@ -1802,8 +1815,8 @@ textarea {
     border-style: solid;
     border-color: #82878c;
     padding: 3px 10px;
-    -webkit-box-shadow: inset 0 -1px 0  #4a4f53;
-    box-shadow: inset 0 -1px 0  #4a4f53;
+    -webkit-box-shadow: inset 0 -1px 0  #4a4f53, 0 0 60px 15px rgba(0,0,0, 0.35),0 0 60px 15px rgba(0,0,0, 0.35);
+    box-shadow: inset 0 -1px 0  #4a4f53, 0 0 60px 15px rgba(0,0,0, 0.35),0 0 60px 15px rgba(0,0,0, 0.35);
     outline: none;
     cursor: pointer;
     width: 100%;
