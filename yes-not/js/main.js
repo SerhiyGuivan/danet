@@ -180,9 +180,9 @@
             $('.vip-countdown').countdown({
                 until: newYear, 
                 format: 'HMS',                
-                layout: '<span class="countdown-col"><span class="countdown-row"><span>{h10}</span><span>{h1}</span></span><span class="countdown-text">{hl}</span></span>' + ' <span class="divider">{sep}</span> ' +
-                '<span class="countdown-col"><span class="countdown-row"><span>{m10}</span><span>{m1}</span></span><span class="countdown-text">{ml}</span></span>' + ' <span class="divider">{sep}</span> ' +
-                '<span class="countdown-col"><span class="countdown-row"><span>{s10}</span><span>{s1}</span></span><span class="countdown-text">{sl}</span></span>'
+                layout: '<span class="countdown-col"><span class="countdown-row"><span>{h10}</span><span>{h1}</span></span><span class="countdown-text">{hl}!</span></span>' + ' <span class="divider">{sep}</span> ' +
+                '<span class="countdown-col"><span class="countdown-row"><span>{m10}</span><span>{m1}</span></span><span class="countdown-text">{ml}!</span></span>' + ' <span class="divider">{sep}</span> ' +
+                '<span class="countdown-col"><span class="countdown-row"><span>{s10}</span><span>{s1}</span></span><span class="countdown-text">{sl}!</span></span>'
             }); 
         }
         if($('#game-countdown').length){
