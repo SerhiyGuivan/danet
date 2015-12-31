@@ -79,6 +79,9 @@
                 closeButton: false,
             })
             $(document).bind('cbox_complete', function(){
+                $('.bk-new-message .btn-ok').on('click', function(){
+                    $.colorbox.close();
+                })
                 $('.bk-new-message .btn-reply').on('click', function(){
                     $('.buttons-wrap').hide();
                     $('.bk-new-message .form-reply-wrap').show();
